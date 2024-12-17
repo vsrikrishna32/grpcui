@@ -1,4 +1,6 @@
-module github.com/vsrikrishna32/grpcui
+module github.com/fullstorydev/grpcui
+replace github.com/fullstorydev/grpcui => github.com/vsrikrishna32.grpcui
+
 
 go 1.21
 
