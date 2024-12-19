@@ -13,7 +13,7 @@ import (
 
 	"github.com/jhump/protoreflect/desc"
 
-	"github.com/fullstorydev/grpcui/internal/resources/webform"
+	"github.com/vsrikrishna32/grpcui/internal/resources/webform"
 )
 
 var (
