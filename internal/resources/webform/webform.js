@@ -994,7 +994,9 @@ window.initGRPCForm = function(services, svcDescs, mtdDescs, invokeURI, metadata
         // if there are any remaining fields, they are not valid field names
         for (var p in value) {
             if (value.hasOwnProperty(p)) {
-                throw new Error("value for type " + type + " has unrecognized field: " + p)
+                if(type != "google.protobuf.Empty" && p != "value") {
+                      throw new Error("value for type " + type + " has unrecognized field: " + p)
+		}
             }
         }
 
